@@ -18,15 +18,16 @@
   <div id="nav">
     <div id="logo">Torashin Karate Club</div>
     <div id="menu">
-      <li>About</li>
-      <li>Contact us</li>
+		<ul>
+			<li id="book"><a href="#join">Try a free class</a></li>
+		</ul>
     </div>
     <div class="clear"></div>
   </div>
   <div class="grey">
     <div class="container">
-      <h2>Everyone is welcome.</h2>
-      <p>Our family friendly karate club has over <strong>40 years experience</strong> in helping people build confidence, learn self-defense and keep fit. We pride ourselves on our <strong>integral training</strong>, whilst still remebering to have fun along the way.</p>
+      <h2>One of Swansea's longest running karate clubs.</h2>
+      <p>Torashin Karate Club has over <strong>40 years experience</strong> in helping people build confidence, learn self-defense and keep fit. We pride ourselves on our <strong>integral training</strong>, whilst still remembering to have fun along the way. Our family friendly classes are located at Cefn Hengoed Leisure Centre, Swansea. </p>
     </div>
   </div>
   <svg preserveAspectRatio="none" version="1.1" width="1600" height="50" viewBox="0 0 1600 50" style="width:100%; float:left;">
@@ -71,7 +72,7 @@
       <div class="gridBoxOuter">
         <div class="gridBox">
           <div class="gridBoxInner">
-            <h3>First class instructors</h3>
+            <h3>Train with experts</h3>
             <img src="img/instructors.jpg" alt="Torashin Karate Club Swansea"/>
             <p>Our Instructors have spent many years refining their own training and have decades of experience of teaching adults and children alike. Our club is fully insured and all of our instructors are DBS checked.</p>
           </div>
@@ -85,9 +86,9 @@
         </div>
         <div class="gridBox">
           <div class="gridBoxInner">
-            <h3>Train with champions</h3>
+            <h3>Become a champion</h3>
             <img src="img/champions.jpg" alt="Torashin Karate Club Swansea"/>
-            <p>Many of our students compete in the Welsh Karate League and other tournaments throughout the UK. We have a great success record...</p>
+            <p>All of our students have to opportunity to compete in the <a href="https://www.karateleague.wales/" target="_blank">Welsh Karate League</a> and other tournaments throughout the UK. We have a very successful track record in all areas of competition.</p>
           </div>
         </div>
       </div>
@@ -139,9 +140,9 @@
     <div class="clear"></div>
   </div>
   <div class="yellow">
-    <div class="container">
+    <div id="join" class="container">
       <h2>Join the club</h2>
-      <p>If you have any queries please contact Julie on 07809 883 518.</p>
+      <p>If you would like to book a free lesson of have any queries, please contact Julie on <strong>07809 883 518</strong>.</p>
     </div>
   </div>
   <div class="greybg">
@@ -191,6 +192,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+	/*
+$("#book").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#join").offset().top
+    }, 2000);
+});*/
 </script>
 </body>
 </html>
