@@ -37,7 +37,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   font-family: 'Montserrat';
-  background: #000000;
 }
 ol, ul {
   list-style: none;
@@ -53,7 +52,432 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.cover{margin: 0px; padding: 5% 0 0 0; text-align: center;}
-.cover img {width: 30%; margin: auto;}
-.cover p {color: #ffffff; padding: 1%;}
-.cover h3 {color: #fbbd4c; padding: 1%; font-family: 'AkiraExpanded-SuperBold'; font-size: 1.5em;}
+#wrapper {}
+h1 {
+  font-family: AkiraExpanded-SuperBold;
+  padding: 2%;
+  font-size: 3.2em;
+}
+h2 {
+  font-family: AkiraExpanded-SuperBold;
+  font-size: 3em;
+  padding: 2%;
+}
+h3 {
+  font-family: AkiraExpanded-SuperBold;
+  font-size: 1.3em;
+  padding: 2%;
+}
+h4 {
+  font-family: AkiraExpanded-SuperBold;
+  font-size: 1em;
+  padding: 4%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.fLeft {
+  float: left;
+}
+strong {
+  font-weight: 700;
+  color: #fbbd4c;
+}
+a {
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+#nav {
+  font-family: AkiraExpanded-SuperBold;
+  color: #fbbd4c;
+  font-size: 1.5em;
+  padding: 1%;
+  background-color: #121212;
+}
+#logo {
+  float: left;
+  padding: 1%;
+  width: 45%;
+}
+#menu {
+  float: right;
+  padding: 0%;
+  width: 45%;
+  text-align: right;
+}
+#menu ul {
+  list-style-type: none;
+}
+#menu li {
+  display: inline-block;
+  padding: 2%;
+  background-color: #fbbd4c;
+  color: #121212;
+  cursor: pointer;
+}
+#menu li a {
+  color: #121212;
+}
+#tiger {
+  width: 15%;
+  height: auto;
+  float: left;
+}
+.yellow {
+  background: #fbbd4c;
+  color: #121212 !important;
+  text-align: center;
+  padding: 5%;
+}
+.yellow strong {
+  color: #121212;
+}
+.grey {
+  background: #262626;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 5%;
+}
+.greybg {
+  background: #262626;
+}
+.blackbg {
+  background: #121212;
+}
+.container {
+  max-width: 70%;
+  margin: auto;
+}
+p {
+  font-size: 1.1em;
+  padding: 2%;
+  line-height: 1.4em;
+}
+.gridBoxOuter {
+  width: 100%;
+  text-align: center;
+}
+.gridBox {
+  width: 33%;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+.gridBox a {
+  font-weight: 700;
+  color: #121212;
+}
+.gridBoxInner {
+  margin: 1%;
+  background-color: #fbbd4c;
+  color: #121212;
+  text-align: left;
+}
+.gridBoxInner h3 {
+  padding: 4%;
+}
+.gridBoxInner img {
+  width: 100%;
+  height: auto;
+}
+.gridBoxInner p {
+  font-size: 0.9em;
+  padding: 4%;
+  line-height: 1.4em;
+}
+#footer {
+  background: #262626;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 5%;
+}
+#footer .gridBoxInner {
+  background: none;
+  color: #ffffff;
+}
+#footer img {
+  width: 60%;
+  padding: 4%;
+}
+#footer a {
+  color: #fbbd4c;
+}
+.bullets {
+  list-style-type: disc;
+}
+#why {
+  background-color: #121212;
+  padding: 5% 5% 3% 5%;
+  /*
+  background-image: url("img/bg-kick.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+	*/
+}
+#why div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#why h3 {
+  color: #fbbd4c;
+  font-size: 2em;
+}
+#why ul {
+  text-align: left;
+  margin: 5% 0 0 0;
+}
+#why li {
+  margin: 2% 5%;
+  float: left;
+  width: 40%;
+}
+#faq {
+  background-color: #262626;
+  padding: 5% 5% 5% 5%;
+}
+#faq h2 {
+  text-align: center;
+  color: #fbbd4c;
+}
+#events {
+  background-color: #262626;
+  padding: 5% 5% 5% 5%;
+  color: #ffffff;
+  text-align: center;
+}
+#events ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+#events li {
+  font-size: 1.1em;
+  padding: 0.5%;
+}
+#events h2 {
+  text-align: center;
+  color: #fbbd4c;
+}
+.accordion {
+  background-color: #fbbd4c;
+  color: #121212;
+  cursor: pointer;
+  padding: 2%;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+  font-weight: 700;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ebae40;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  font-size: 1em;
+  padding: 3%;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #121212;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.social img {
+  width: 10% !important;
+}
+#tiger {
+  display: none;
+}
+#video {
+  width: 100%;
+}
+#video img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 48em) {
+  .container {
+    max-width: 85%;
+  }
+  h2 {
+    font-size: 2.6em;
+  }
+  .w40 {
+    width: 45%;
+  }
+  #why {
+    padding: 9% 5% 3% 5%;
+  }
+  .gridBox {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #logo {
+    width: auto;
+    text-align: center;
+    padding: 1% 1% 3% 1%;
+  }
+  #menu {
+    width: 100%;
+  }
+  #menu li {
+    display: block;
+    text-align: center;
+  }
+  #menu li a {
+    font-size: 0.8em !important;
+  }
+  .container {
+    max-width: 90%;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: left !important;
+  }
+  h3 {
+    font-size: 1.3em !important;
+    text-align: left !important;
+  }
+  .grey {
+    padding: 5% 1%;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: left !important;
+  }
+  #why {
+    padding: 30% 1% 1% 1%;
+  }
+  #why li {
+    width: 100%;
+    font-size: 1em;
+  }
+  .w40 {
+    width: 100%;
+  }
+  .gridBox {
+    width: 100%;
+  }
+  .gridBoxOuter {
+    padding: 5% 0 5% 0;
+  }
+  .accordion {
+    font-size: 0.9em;
+  }
+  .panel p {
+    font-size: 0.9em;
+  }
+  #faq {
+    padding: 5% 5% 10% 5%;
+  }
+  #tiger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #tiger img {
+    width: 60%;
+    padding: 3% 0 0 0;
+  }
+  .kanji {
+    padding: 10% 0 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #logo {
+    width: auto;
+    text-align: center;
+    padding: 1% 1% 3% 1%;
+  }
+  #menu {
+    width: 100%;
+  }
+  #menu li {
+    display: block;
+    text-align: center;
+  }
+  #menu li a {
+    font-size: 0.8em !important;
+  }
+  .container {
+    max-width: 90%;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: left !important;
+  }
+  h3 {
+    font-size: 1.3em !important;
+    text-align: left !important;
+  }
+  .grey {
+    padding: 5% 1%;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: left !important;
+  }
+  #why {
+    padding: 30% 1% 1% 1%;
+  }
+  #why li {
+    width: 100%;
+    font-size: 1em;
+  }
+  .w40 {
+    width: 100%;
+  }
+  .gridBox {
+    width: 100%;
+  }
+  .gridBoxOuter {
+    padding: 5% 0 5% 0;
+  }
+  .accordion {
+    font-size: 0.9em;
+  }
+  .panel p {
+    font-size: 0.9em;
+  }
+  #faq {
+    padding: 5% 5% 10% 5%;
+  }
+  #tiger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #tiger img {
+    width: 60%;
+    padding: 3% 0 0 0;
+  }
+  .kanji {
+    padding: 10% 0 0 0;
+  }
+}

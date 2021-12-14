@@ -200,10 +200,23 @@
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-      <div class="cover"><img src="img/torashin.svg" alt="Torashin Karate Club"/>
-		  <h3>One of Swansea's longest running karate clubs.</h3>
-	<p>Every Tuesday and Thursday - 6:30pm - 8:30pm. Cefn Hengoed Leisure Centre, Swansea.</p>
-		  <p>Website coming soon.</p></div>
-     
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+	/*
+$("#book").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#join").offset().top
+    }, 2000);
+});*/
+</script>
 </body>
 </html>
