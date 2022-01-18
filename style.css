@@ -137,6 +137,10 @@ a {
 .yellow strong {
   color: #121212;
 }
+.yellow a {
+  color: #F20000;
+  font-weight: 700;
+}
 .grey {
   background: #262626;
   color: #ffffff !important;
