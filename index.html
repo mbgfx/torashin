@@ -204,7 +204,7 @@
 <div id="join" class="yellow">
   <div class="container">
     <h2>Join the club</h2>
-    <p>If you would like to book a free lesson of have any queries, please contact Julie on <strong>07809 883 518</strong>.</p>
+    <p>If you would like to book a free lesson of have any queries, please contact Julie on <strong>07809 883 518</strong> or email us via <a href="mailto:info@torashinswansea.co.uk">info@torashinswansea.co.uk</a>.</p>
   </div>
 </div>
 <div class="greybg">
@@ -221,7 +221,7 @@
           <h4>Contact Us</h4>
           <p><strong>Address:</strong> Cefn Hengoed Leisure Centre, Caldicot Rd, Bonymaen, Swansea SA1 7HX</p>
           <p><strong>Phone:</strong> 07809 883 518</p>
-         <!-- <p><strong>Email:</strong> email address</p>-->
+	  <p><strong>Email:</strong> <a href="mailto:info@torashinswansea.co.uk">info@torashinswansea.co.uk</a></p>
         </div>
       </div>
       <div class="gridBox">
@@ -238,7 +238,6 @@
     </div>
   </div>
 </div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -254,46 +253,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-	
-(function( $ ) {
-    // the sameHeight functions makes all the selected elements of the same height
-    $.fn.sameHeight = function() {
-        var selector = this;
-        var heights = [];
-
-        // Save the heights of every element into an array
-        selector.each(function(){
-            var height = $(this).height();
-            heights.push(height);
-        });
-
-        // Get the biggest height
-        var maxHeight = Math.max.apply(null, heights);
-        // Show in the console to verify
-        console.log(heights,maxHeight);
-
-        // Set the maxHeight to every selected element
-        selector.each(function(){
-            $(this).height(maxHeight);
-        }); 
-    };
- 
-}( jQuery ));	
-	
-	
-
-	
-/*	
-$( document ).ready(function() {
-    $('.gridBoxInner').sameHeight();
-});
-*/
-	/*
-$("#book").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#join").offset().top
-    }, 2000);
-});*/
 </script>
 </body>
 </html>
