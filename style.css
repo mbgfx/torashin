@@ -314,7 +314,8 @@ p {
   display: none;
 }
 #video {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 #video img {
   width: 100%;
