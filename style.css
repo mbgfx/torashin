@@ -92,6 +92,12 @@ a {
 .clear {
   clear: both;
 }
+
+.burg {
+color: #a51e30;
+	font-weight: 700;
+}
+
 #nav {
   font-family: AkiraExpanded-SuperBold;
   color: #fbbd4c;
@@ -128,6 +134,31 @@ a {
   height: auto;
   float: left;
 }
+
+
+/*
+.outline{
+  transform: scale(1.3);
+  -webkit-animation: slowpan 50s linear 0s infinite alternate;
+}
+
+.outline img {
+	width:200%;
+	height: auto;
+	margin-left: -10%;
+}
+
+@-webkit-keyframes slowpan {
+ 0% {
+    transform:translateX(200px) scale(1.25);
+  }
+  
+  100% {
+    transform:translateX(-200px) scale(1.25);
+  }
+  
+}
+*/
 .yellow {
   background: #fbbd4c;
   color: #121212 !important;
@@ -138,7 +169,7 @@ a {
   color: #121212;
 }
 .yellow a {
-  color: #F20000;
+  color: #a51e30;
   font-weight: 700;
 }
 .grey {
