@@ -55,8 +55,8 @@ table {
 #wrapper {}
 h1 {
   font-family: AkiraExpanded-SuperBold;
+  font-size: 3em;
   padding: 2%;
-  font-size: 3.2em;
 }
 h2 {
   font-family: AkiraExpanded-SuperBold;
